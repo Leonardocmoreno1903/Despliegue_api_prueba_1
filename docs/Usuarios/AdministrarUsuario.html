@@ -30,7 +30,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             function cargarUsuarios(){
-                fetch('http://127.0.0.1:5000/usuarios')
+                fetch('https://despliegueapiprueba1-production.up.railway.app/usuarios')
                     .then(response => response.json())
                     .then(data => {
                         const usuariosBody = document.getElementById('usuarios-body')
@@ -54,7 +54,7 @@
         });
 
             function eliminarUsuario(id){
-                fetch(`http://127.0.0.1:5000/eliminar_usuario/${id}`,{
+                fetch(`https://despliegueapiprueba1-production.up.railway.app/eliminar_usuario/${id}`,{
                     method:'DELETE'
                 })
                 .then(response => response.json())

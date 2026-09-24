@@ -30,7 +30,7 @@
     <script>
         const idUsuario = new URLSearchParams(window.location.search).get('id');
         document.addEventListener('DOMContentLoaded', function(){
-            fetch(`http://127.0.0.1:5000/usuario/${idUsuario}`)
+            fetch(`https://despliegueapiprueba1-production.up.railway.app/usuario/${idUsuario}`)
             .then(response => response.json())
             .then(data =>{
                 document.getElementById('id').value = data[0];

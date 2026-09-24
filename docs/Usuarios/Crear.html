@@ -33,7 +33,7 @@
                 const nombre = document.getElementById('nombre').value;
                 const email = document.getElementById('email').value;
                 const contrasena = document.getElementById('contrasena').value;
-                fetch('http://127.0.0.1:5000/nuevo_usuario',{
+                fetch('https://despliegueapiprueba1-production.up.railway.app/nuevo_usuario',{
                     method:"POST",
                     headers:{
                         'Content-Type': 'application/json'

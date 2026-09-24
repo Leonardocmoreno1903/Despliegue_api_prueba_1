@@ -8,7 +8,7 @@ class ConexionMysql:
             self.mibasededatos = mysql.connector.connect(
 
                 host = os.getenv("MYSQLHOST", "localhost"),
-                port = os.getenv("MYSQLPORT", "3306"),
+                port = int(os.getenv("MYSQLPORT", "3306")),
                 user = os.getenv("MYSQLUSER", "root"),
                 password = os.getenv("MYSQLPASSWORD", ""),
                 database = os.getenv("MYSQL_DATABASE", "prueba")
